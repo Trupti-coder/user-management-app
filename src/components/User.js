@@ -29,7 +29,7 @@ function User(){
     // filter user
     let filteredUser=user.filter((user)=>{
         return(
-            (!gender || user.gender===user)
+            (!gender || user.gender===gender)
         )
     })
 
@@ -40,10 +40,10 @@ function User(){
         <h3>User Details</h3>
         Select Gender:<select onChange={funSelectGender}>
             <option value="All">All</option>
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
            
-        </select><br></br>
+        </select>
         <table border='2'>
             <tr>
                 <th>Id</th>
