@@ -22,13 +22,12 @@ function User(){
 
     }
 
-    function funSelectGender(event){
-        setGender(event.target.value);
-
-    }
+    function funSelectGender(event) {
+        setGender(event.target.value === 'All' ? '' : event.target.value);
+      }
 
     // filter user
-    let filteredUser=user.filter((x)=>{
+    let filteredUser=user.filter((user)=>{
         return(
             (!gender || user.gender===gender)
         )
@@ -40,10 +39,10 @@ function User(){
         <>
         <h3>User Details</h3>
         Select Gender:<select onChange={funSelectGender}>
-            <option></option>
-            <option>Male</option>
-            <option>Female</option>
-            <option>All</option>
+            <option value="All">All</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+           
         </select><br></br>
         <table border='2'>
             <tr>
