@@ -26,7 +26,7 @@ function User(){
                 <th>Age</th>
                 <th>Gender</th>
                 <th>BloodGroup</th>
-                <th>Address</th>
+                
             </tr>
             {
                 user.map((x)=>{
@@ -38,10 +38,6 @@ function User(){
                             <td>{x.age}</td>
                             <td>{x.gender}</td>
                             <td>{x.bloodGroup}</td>
-                            <td>
-                               
-                            </td>
-
                         </tr>
                     )
                 })
