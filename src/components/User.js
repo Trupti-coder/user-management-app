@@ -21,7 +21,9 @@ function User(){
 
     }
 
-    
+    function funSelectGender(){
+        
+    }
 
     return(
         <>
