@@ -26,7 +26,12 @@ function User(){
                 user.map((x)=>{
                     return(
                         <tr key={x.id}>
-                           
+                            <td>{x.id}</td>
+                            <td>{x.firstName}</td>
+                            <td>{x.lastName}</td>
+                            <td>{x.age}</td>
+                            <td>{x.gender}</td>
+                            <td>{x.bloodGroup}</td>
 
                         </tr>
                     )
