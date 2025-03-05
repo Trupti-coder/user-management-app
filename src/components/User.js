@@ -21,9 +21,17 @@ function User(){
 
     }
 
+    
+
     return(
         <>
         <h3>User Details</h3>
+        Select Gender:<select onClick={funSelectGender}>
+            <option></option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>All</option>
+        </select><br></br>
         <table border='2'>
             <tr>
                 <th>Id</th>
