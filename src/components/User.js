@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function User(){
 
@@ -10,6 +10,11 @@ function User(){
         setUser(result.users);
 
     }
+
+    useEffect(()=>{
+        getAllUsers();
+    },[]);
+    
     return(
         <>
         <h3>User Details</h3>
