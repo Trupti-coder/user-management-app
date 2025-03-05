@@ -15,6 +15,10 @@ function User(){
         getAllUsers();
     },[]);
 
+    function funSort(){
+        
+    }
+
     return(
         <>
         <h3>User Details</h3>
@@ -23,7 +27,7 @@ function User(){
                 <th>Id</th>
                 <th>FirstName</th>
                 <th>LastName</th>
-                <th>Age</th>
+                <th onClick={funSort}>Age</th>
                 <th>Gender</th>
                 <th>BloodGroup</th>
                 
