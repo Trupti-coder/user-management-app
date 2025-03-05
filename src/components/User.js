@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 function User(){
 
     let[user,setUser]=useState([]);
+    let[gender,setGender]=useState('');
 
     async function getAllUsers(){
         let response=await fetch('https://dummyjson.com/users');
@@ -21,14 +22,20 @@ function User(){
 
     }
 
-    function funSelectGender(){
-        
+    function funSelectGender(event){
+        setGender(event.target.value);
+
     }
+
+    // filter user
+    
+
+
 
     return(
         <>
         <h3>User Details</h3>
-        Select Gender:<select onClick={funSelectGender}>
+        Select Gender:<select onChange={funSelectGender}>
             <option></option>
             <option>Male</option>
             <option>Female</option>
