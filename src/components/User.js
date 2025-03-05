@@ -30,7 +30,7 @@ function User(){
     // filter user
     let filteredUser=user.filter((x)=>{
         return(
-            (!filter || user.gender===gender)
+            (!gender || user.gender===gender)
         )
     })
 
@@ -56,7 +56,7 @@ function User(){
                 
             </tr>
             {
-                user.map((x)=>{
+                filteredUser.map((x)=>{
                     return(
                         <tr key={x.id}>
                             <td>{x.id}</td>
