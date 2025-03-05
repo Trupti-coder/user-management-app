@@ -28,7 +28,11 @@ function User(){
     }
 
     // filter user
-    
+    let filteredUser=user.filter((x)=>{
+        return(
+            (!filter || user.gender===gender)
+        )
+    })
 
 
 
