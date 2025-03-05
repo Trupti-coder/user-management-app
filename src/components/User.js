@@ -16,7 +16,9 @@ function User(){
     },[]);
 
     function funSort(){
-        
+        const sortedUser=[...user].sort((a,b)=>a.age-b.age);
+        setUser(sortedUser);
+
     }
 
     return(
