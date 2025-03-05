@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 function User(){
 
-    let[user,setUser]=useState();
+    let[user,setUser]=useState([]);
 
     async function getAllUsers(){
         let response=await fetch('https://dummyjson.com/users');
@@ -14,7 +14,7 @@ function User(){
     useEffect(()=>{
         getAllUsers();
     },[]);
-    
+
     return(
         <>
         <h3>User Details</h3>
@@ -37,6 +37,7 @@ function User(){
                             <td>{x.age}</td>
                             <td>{x.gender}</td>
                             <td>{x.bloodGroup}</td>
+                            <td>{x.address.address}</td>
 
                         </tr>
                     )
