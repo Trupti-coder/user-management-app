@@ -52,6 +52,7 @@ function User(){
                 <th onClick={funSort}>Age</th>
                 <th>Gender</th>
                 <th>BloodGroup</th>
+                <th>Currency</th>
                 
             </tr>
             {
@@ -64,6 +65,7 @@ function User(){
                             <td>{x.age}</td>
                             <td>{x.gender}</td>
                             <td>{x.bloodGroup}</td>
+                            <td>{x.bank.currency}</td>
                         </tr>
                     )
                 })
