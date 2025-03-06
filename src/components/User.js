@@ -4,7 +4,8 @@ function User(){
 
     let[user,setUser]=useState([]);
     let[gender,setGender]=useState('');
-    let[currency,setCurrency]=useState();
+    let[currency,setCurrency]=useState('');
+    let[exchangeRates,setExchangeRates]=useState({});
 
     async function getAllUsers(){
         let response=await fetch('https://dummyjson.com/users');
