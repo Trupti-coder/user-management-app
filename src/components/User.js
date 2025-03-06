@@ -4,8 +4,8 @@ function User(){
 
     let[user,setUser]=useState([]);
     let[gender,setGender]=useState('');
-    let[currency,setCurrency]=useState('');
-    let[exchangeRates,setExchangeRates]=useState({});
+    let[searchId,setSearchId]=useState('');
+   
 
     async function getAllUsers(){
         let response=await fetch('https://dummyjson.com/users');
@@ -35,6 +35,11 @@ function User(){
         )
     })
 
+    //Search 
+    function funSearch(event){
+
+    }
+
     
     return(
         <>
@@ -44,7 +49,8 @@ function User(){
             <option value="male">Male</option>
             <option value="female">Female</option>
            
-        </select>   
+        </select> 
+        Search By Id:<input type="text" value={searchId} onChange={funSearch}></input>  
 
 
     
