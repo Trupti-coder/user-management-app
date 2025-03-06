@@ -35,6 +35,8 @@ function User(){
 
 
 
+
+
     return(
         <>
         <h3>User Details</h3>
@@ -44,6 +46,18 @@ function User(){
             <option value="female">Female</option>
            
         </select>
+        select Currency:<select>
+            <option value="">CNY</option>
+            <option value="">SEK</option>
+            <option value="">INR</option>
+            <option value="">BRL</option>
+            <option value="">EUR</option>
+            <option value="">USD</option>
+            <option value="">NZD</option>
+        </select>
+
+
+
         <table border='2'>
             <tr>
                 <th>Id</th>
