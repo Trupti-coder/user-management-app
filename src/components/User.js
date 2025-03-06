@@ -32,7 +32,8 @@ function User(){
     // filter user
     let filteredUser=user.filter((user)=>{
         return(
-            (!gender || user.gender===gender)
+            (!gender || user.gender===gender)&&
+            (!bloodgroup || user.bloodGroup===bloodgroup)
         )
     })
 
