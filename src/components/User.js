@@ -37,7 +37,12 @@ function User(){
 
     //Search 
     function funSearch(event){
+        setSearchId(event.target.value);
 
+    }
+
+    function funRowClick(){
+        
     }
 
     
@@ -68,7 +73,7 @@ function User(){
             {
                 filteredUser.map((x)=>{
                     return(
-                        <tr key={x.id}>
+                        <tr key={x.id} onClick={funRowClick}>
                             <td>{x.id}</td>
                             <td>{x.firstName}</td>
                             <td>{x.lastName}</td>
