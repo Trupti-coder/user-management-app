@@ -4,6 +4,7 @@ function User(){
 
     let[user,setUser]=useState([]);
     let[gender,setGender]=useState('');
+    let[currency,setCurrency]=useState();
 
     async function getAllUsers(){
         let response=await fetch('https://dummyjson.com/users');
@@ -33,6 +34,12 @@ function User(){
         )
     })
 
+    // currency 
+
+    function funSelectCurrency(event){
+
+    }
+
 
 
 
@@ -46,7 +53,7 @@ function User(){
             <option value="female">Female</option>
            
         </select>
-        select Currency:<select>
+        select Currency:<select onChange={funSelectCurrency}>
             <option value="">CNY</option>
             <option value="">SEK</option>
             <option value="">INR</option>
