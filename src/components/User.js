@@ -37,6 +37,7 @@ function User(){
     // currency 
 
     function funSelectCurrency(event){
+        setCurrency(event.target.value);  
 
     }
 
@@ -52,15 +53,17 @@ function User(){
             <option value="male">Male</option>
             <option value="female">Female</option>
            
-        </select>
+        </select>   
+
+
         select Currency:<select onChange={funSelectCurrency}>
-            <option value="">CNY</option>
-            <option value="">SEK</option>
-            <option value="">INR</option>
-            <option value="">BRL</option>
-            <option value="">EUR</option>
-            <option value="">USD</option>
-            <option value="">NZD</option>
+            <option value="cny">CNY</option>
+            <option value="sek">SEK</option>
+            <option value="inr">INR</option>
+            <option value="brl">BRL</option>
+            <option value="eur">EUR</option>
+            <option value="usd">USD</option>
+            <option value="nzd">NZD</option>
         </select>
 
 
