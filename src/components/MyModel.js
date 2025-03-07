@@ -15,6 +15,11 @@ function MyModel(props){
 
 useEffect(()=>{
     setModelOpen(true);
+    setId(props.rowdata.id);
+    setFirstName(props.rowdata.firstName);
+    setlastName(props.rowdata.lastName);
+    setAge(props.rowdata.age);
+    setGender(props.rowdata.gender);
     
 })
 
