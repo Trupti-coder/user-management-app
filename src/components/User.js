@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import MyModel from "./MyModel";
 
 function User(){
 
@@ -109,6 +110,9 @@ function User(){
                 })
             }
         </table>
+        {
+            rowFlag && <MyModel rowData={rowData} /> 
+        }
         </>
     );
 }
