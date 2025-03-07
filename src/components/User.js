@@ -96,7 +96,7 @@ function User(){
             {
                 filteredUser.map((x)=>{
                     return(
-                        <tr key={x.id} onClick={(x)=>{funRowClick}}>
+                        <tr key={x.id} onClick={()=>{funRowClick(x)}}>
                             <td>{x.id}</td>
                             <td>{x.firstName}</td>
                             <td>{x.lastName}</td>
