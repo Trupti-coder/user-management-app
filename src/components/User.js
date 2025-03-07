@@ -47,7 +47,10 @@ function User(){
     let[rowFlag,setRowFlag]=useState(false);
     let[rowData,setRowData]=useState({});
 
-    function funRowClick(){
+    function funRowClick(obj){
+        console.log(obj);
+        setRowFlag(true);
+        setRowData(obj);
 
     }
 
