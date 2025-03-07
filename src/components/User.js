@@ -3,6 +3,10 @@ import MyModel from "./MyModel";
 
 function User(){
 
+    function funClick(){
+        
+    }
+
     let[user,setUser]=useState([]);
     let[gender,setGender]=useState('');
     let[searchId,setSearchId]=useState('');
@@ -113,6 +117,13 @@ function User(){
         {
             rowFlag && <MyModel rowData={rowData} /> 
         }
+
+        <h3>Pagination</h3>
+        <ul onClick={funClick}>
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+        </ul>
         </>
     );
 }
