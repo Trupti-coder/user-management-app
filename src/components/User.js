@@ -3,8 +3,14 @@ import MyModel from "./MyModel";
 
 function User(){
 
-    function funClick(){
+    function funClick(event){
+        event.preventDefault();
+        var x=parseInt(event.target.textContent);
+        console.log(x);
+
         
+
+
     }
 
     let[user,setUser]=useState([]);
