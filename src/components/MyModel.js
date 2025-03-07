@@ -17,10 +17,18 @@ function MyModel(props){
                         Id:<input type="text" defaultValue={txtId} ></input>
                     </div>
                     <div>
+                        FirstName:<input type="text"></input>
 
                     </div>
                     <div>
-                        
+                        LastName:<input type="text"></input>
+
+                    </div>
+                    <div>
+                        Age:<input type="text"></input>
+                    </div>
+                    <div>
+                        Gender:<input type="text"></input>
                     </div>
                 </Modal.Body>
             </Modal.Dialog>
