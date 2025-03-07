@@ -7,8 +7,28 @@ function User(){
         event.preventDefault();
         var x=parseInt(event.target.textContent);
         console.log(x);
+        var lm=0;
+        var sk=0;
 
-        
+        if(x===1){
+            lm=10;
+            sk=0;
+
+        }
+        else if(x===2){
+            lm=10;
+            sk=10;
+
+
+        }
+        else if(x===3){
+            lm=10;
+            sk=20;
+        }
+        else{
+            lm=10;
+            sk=0;
+        }
 
 
     }
