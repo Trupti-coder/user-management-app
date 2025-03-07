@@ -9,25 +9,30 @@ function User(){
         console.log(x);
         var lm=0;
         var sk=0;
+        getAllUsers(lm,sk)
 
         if(x===1){
             lm=10;
             sk=0;
+            getAllUsers(lm,sk)
 
         }
         else if(x===2){
             lm=10;
             sk=10;
+            getAllUsers(lm,sk)
 
 
         }
         else if(x===3){
             lm=10;
             sk=20;
+            getAllUsers(lm,sk);
         }
         else{
             lm=10;
             sk=0;
+            getAllUsers(lm,sk)
         }
 
 
@@ -39,7 +44,7 @@ function User(){
     let[bloodgroup,setBloodGroup]=useState('');
    
 
-    async function getAllUsers(){
+    async function getAllUsers(lm,sk){
         let response=await fetch('https://dummyjson.com/users');
         let result=await response.json();
         setUser(result.users);
@@ -47,7 +52,7 @@ function User(){
     }
 
     useEffect(()=>{
-        getAllUsers();
+        getAllUsers(10,0);
     },[]);
 
     function funSort(){
