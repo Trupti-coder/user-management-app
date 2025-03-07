@@ -1,4 +1,4 @@
-import { Modal } from "bootstrap";
+import { Button, Modal } from "bootstrap";
 import { useEffect, useState } from "react";
 
 function MyModel(props){
@@ -34,23 +34,28 @@ useEffect(()=>{
                 </Modal.Header>
                 <Modal.Body>
                     <div>
-                        Id:<input type="text" defaultValue={txtId} ></input>
+                        Id:<input type="text" defaultValue={id} ></input>
                     </div>
                     <div>
-                        FirstName:<input type="text"></input>
+                        FirstName:<input type="text" defaultValue={firstName}></input>
 
                     </div>
                     <div>
-                        LastName:<input type="text"></input>
+                        LastName:<input type="text" defaultValue={lastName}></input>
 
                     </div>
                     <div>
-                        Age:<input type="text"></input>
+                        Age:<input type="text" defaultValue={age}></input>
                     </div>
                     <div>
-                        Gender:<input type="text"></input>
+                        Gender:<input type="text" defaultValue={gender}></input>
                     </div>
                 </Modal.Body>
+                <Modal.Footer>
+                    <Button variant="secondary" onclick={closeModel}></Button>
+                    <Button variant="secondary" onclick={funUpdate}></Button>
+                    <Button variant="secondary" onclick={funDelete}></Button>
+                </Modal.Footer>
             </Modal.Dialog>
         </Modal>
         </>
