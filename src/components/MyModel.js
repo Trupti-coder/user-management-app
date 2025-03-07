@@ -1,8 +1,23 @@
 import { Modal } from "bootstrap";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function MyModel(props){
     let[modelOpen,setModelOpen]=useState(false);
+
+    let[id,setId]=useState();
+    let[firstName,setFirstName]=useState();
+    let[lastName,setlastName]=useState();
+    let[age,setAge]=useState();
+    let[gender,setGender]=useState();
+
+
+
+
+useEffect(()=>{
+    setModelOpen(true);
+    
+})
+
     return(
         <>
         <Modal>
