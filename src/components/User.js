@@ -30,7 +30,7 @@ function User(){
             getAllUsers(lm,sk);
         }
         else{
-            lm=10;
+            lm=0;
             sk=0;
             getAllUsers(lm,sk)
         }
@@ -45,7 +45,7 @@ function User(){
    
 
     async function getAllUsers(lm,sk){
-        let response=await fetch('https://dummyjson.com/users');
+        let response=await fetch('https://dummyjson.com/users?limit='+lm+'&skip='+sk);
         let result=await response.json();
         setUser(result.users);
 
