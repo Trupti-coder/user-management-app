@@ -23,6 +23,14 @@ useEffect(()=>{
     
 })
 
+function funUpdate(){
+
+}
+
+function funDelete(){
+    
+}
+
     return(
         <>
         <Modal>
