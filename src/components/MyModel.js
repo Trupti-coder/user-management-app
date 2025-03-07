@@ -30,9 +30,16 @@ function MyModel(props) {
         // Update functionality
     }
 
-    function funDelete() {
-        // Delete functionality
+    async function funDelete(){
+        let response=await fetch("https://dummyjson.com/users/"+id,{
+            method:'DELETE'
+        })
+        var result=await response.json();
+        console.log(result);
+        closeModel(false);
     }
+
+  
 
     return (
         <>
