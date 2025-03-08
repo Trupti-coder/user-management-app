@@ -7,6 +7,7 @@ function AddNewUser({onAddUser}){
     let[age,setAge]=useState('');
     let[gender,setGender]=useState('');
     let[bloodgroup,setBloodGroup]=useState('');
+    let[currency,setCurrency]=useState('');
 
 
     function funSubmit(event){
@@ -65,6 +66,12 @@ function AddNewUser({onAddUser}){
             value={bloodgroup}
             placeholder="Enter BloodGroup"
             onChange={(event)=>setBloodGroup(event.target.value)}
+            />
+
+            Currency:<input type="text"
+            value={currency}
+            placeholder="Enter Currency"
+            onChange={(event)=>setCurrency(event.target.value)}
             />
             <button type="submit">Add User</button>
         </form>
