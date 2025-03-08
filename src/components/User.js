@@ -44,6 +44,10 @@ function User(){
     let[gender,setGender]=useState('');
     let[searchId,setSearchId]=useState('');
     let[bloodgroup,setBloodGroup]=useState('');
+      //filter by age
+
+      let[minAge,setMinAge]=useState('');
+      let[maxAge,setMaxAge]=useState('');
    
 
     async function getAllUsers(lm,sk){
@@ -71,7 +75,7 @@ function User(){
     let filteredUser=user.filter((user)=>{
         return(
             (!gender || user.gender===gender)&&
-            (!bloodgroup || user.bloodGroup===bloodgroup)
+            (!bloodgroup || user.bloodgroup===bloodgroup)&&
             (!minAge || user.age>=minAge)&&
             (!maxAge || user.age<=maxAge)
         )
@@ -104,8 +108,8 @@ function User(){
 
     //filter by age
 
-    let[minAge,setMinAge]=useState('');
-    let[maxAge,setMaxAge]=useState('');
+    // let[minAge,setMinAge]=useState('');
+    // let[maxAge,setMaxAge]=useState('');
 
 
     return(
@@ -175,9 +179,9 @@ function User(){
 
         <h3>Pagination</h3>
         <ul onClick={funClick}>
-            <li><a href="">1</a></li>
-            <li><a href="">2</a></li>
-            <li><a href="">3</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
         </ul>
 
     
