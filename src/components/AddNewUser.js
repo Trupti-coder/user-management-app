@@ -18,7 +18,8 @@ function AddNewUser({onAddUser}){
             lastName,
             age,
             gender,
-            bloodgroup
+            bloodgroup,
+            bank:{currency}
         }
 
         onAddUser(newUser);
