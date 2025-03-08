@@ -169,7 +169,7 @@ function User(){
             <li><a href="">3</a></li>
         </ul>
 
-        <Link to='/addUser'>Add New user</Link>
+    
         </>
     );
 }
