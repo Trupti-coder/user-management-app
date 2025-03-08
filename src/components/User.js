@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import MyModel from "./MyModel";
 import AddNewUser from "./AddNewUser";
+import { Link } from "react-router-dom";
 
 function User(){
 
@@ -167,6 +168,8 @@ function User(){
             <li><a href="">2</a></li>
             <li><a href="">3</a></li>
         </ul>
+
+        <Link to='/addUser'>Add New user</Link>
         </>
     );
 }
