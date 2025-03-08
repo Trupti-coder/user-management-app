@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function AddNewUser(){
+function AddNewUser(onAddUser){
 
     let[id,setId]=useState('');
     let[firstName,setFirstName]=useState('');
@@ -20,6 +20,10 @@ function AddNewUser(){
             gender,
             bloodgroup
         }
+
+        onAddUser(newUser);
+
+        //clear form fields
 
     }
     return(
