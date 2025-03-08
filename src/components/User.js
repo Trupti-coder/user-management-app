@@ -102,7 +102,7 @@ function User(){
 
     //filter by age
 
-    let[monAge,setMinAge]=useState('');
+    let[minAge,setMinAge]=useState('');
     let[maxAge,setMaxAge]=useState('');
 
     
@@ -131,8 +131,8 @@ function User(){
             </lable>
             <br></br> <br></br>
 
-            Minimum Age:<input type="number" value={minAge} ></input>
-            Maximum Age:<input type="number" value={maxAge}></input>
+            Minimum Age:<input type="number" value={minAge} onChange={(event)=>setMinAge(event.target.value)}></input>
+            Maximum Age:<input type="number" value={maxAge} onChange={(event)=>setMaxAge(event.target.value)}></input>
             <br></br><br></br>
        
          search By Id:<input type="text" value={searchId} onChange={funSearch}></input>  
