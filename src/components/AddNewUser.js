@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function AddNewUser(onAddUser){
+function AddNewUser({onAddUser}){
 
     let[firstName,setFirstName]=useState('');
     let[lastName,setLastName]=useState('');
