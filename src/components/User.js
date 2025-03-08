@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import MyModel from "./MyModel";
+import AddNewUser from "./AddNewUser";
 
 function User(){
 
@@ -90,6 +91,13 @@ function User(){
 
     }
 
+    //AddUser
+
+    function handleNewUser(newUser){
+        setUser([...user,newUser]);
+
+    }
+
     
     return(
         <>
@@ -147,6 +155,9 @@ function User(){
         </table>
         {
             rowFlag && <MyModel rowData={rowData} /> 
+        }
+        {
+            <AddNewUser onAddUser={handleNewUser} />
         }
 
         <h3>Pagination</h3>
