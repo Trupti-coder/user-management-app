@@ -121,14 +121,6 @@ function User(){
 
 
 
-
-
-
-
-
-
-
-
     //AddUser
 
     function handleNewUser(newUser){
