@@ -98,6 +98,29 @@ function User(){
 
     }
 
+    //Sort by Name
+
+    function funSortName(){
+
+        const sortedUsers=[...user].sort((a,b)=>{
+            if(a.firstName<b.firstName){
+                return -1;
+            }
+        })
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
     //AddUser
 
     function handleNewUser(newUser){
@@ -106,11 +129,7 @@ function User(){
 
     }
 
-    //filter by age
-
-    // let[minAge,setMinAge]=useState('');
-    // let[maxAge,setMaxAge]=useState('');
-
+    
 
     return(
         <>
@@ -159,7 +178,7 @@ function User(){
                     return(
                         <tr key={x.id} onClick={()=>{funRowClick(x)}}>
                             <td>{x.id}</td>
-                            <td>{x.firstName}</td>
+                            <td onClick={()=>{funSortName(x)}}>{x.firstName}</td>
                             <td>{x.lastName}</td>
                             <td>{x.age}</td>
                             <td>{x.gender}</td>
