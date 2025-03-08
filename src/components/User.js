@@ -108,8 +108,6 @@ function User(){
     let[maxAge,setMaxAge]=useState('');
 
 
-
-    
     return(
         <>
         <h3>User Details</h3>
