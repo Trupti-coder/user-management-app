@@ -2,7 +2,6 @@ import { useState } from "react";
 
 function AddNewUser(onAddUser){
 
-    let[id,setId]=useState('');
     let[firstName,setFirstName]=useState('');
     let[lastName,setLastName]=useState('');
     let[age,setAge]=useState('');
@@ -25,15 +24,18 @@ function AddNewUser(onAddUser){
 
         //clear form fields
 
+        setFirstName('');
+        setLastName('');
+        setAge('');
+        setGender('');
+        setBloodGroup('');
+      
+
     }
     return(
         <>
         <form onSubmit={funSubmit}>
-            Id:<input type="text"
-            value={id}
-            placeholder="Enter Id"
-            onChange={(event)=>setId(event.target.value)}
-            />
+         
 
             FirstName:<input type="text"
             value={firstname}
