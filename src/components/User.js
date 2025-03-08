@@ -100,6 +100,11 @@ function User(){
 
     }
 
+    //filter by age
+
+    let[monAge,setMinAge]=useState('');
+    let[maxAge,setMaxAge]=useState('');
+
     
     return(
         <>
