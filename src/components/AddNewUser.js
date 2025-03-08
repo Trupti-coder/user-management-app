@@ -1,4 +1,19 @@
+import { useState } from "react";
+
 function AddNewUser(){
+
+    let[id,setId]=useState('');
+    let[firstName,setFirstName]=useState('');
+    let[lastName,setLastName]=useState('');
+    let[age,setAge]=useState('');
+    let[gender,setGender]=useState('');
+    let[bloodgroup,setBloodGroup]=useState('');
+
+
+    function funSubmit(event){
+        event.preventDefault();
+
+    }
     return(
         <>
         <form onSubmit={funSubmit}>
