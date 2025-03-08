@@ -12,6 +12,14 @@ function AddNewUser(){
 
     function funSubmit(event){
         event.preventDefault();
+        const newUser={
+            id:Date.now(),
+            firstName,
+            lastName,
+            age,
+            gender,
+            bloodgroup
+        }
 
     }
     return(
