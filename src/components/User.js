@@ -72,6 +72,8 @@ function User(){
         return(
             (!gender || user.gender===gender)&&
             (!bloodgroup || user.bloodGroup===bloodgroup)
+            (!minAge || user.age>=minAge)&&
+            (!maxAge || user.age<=maxAge)
         )
     })
 
@@ -104,6 +106,8 @@ function User(){
 
     let[minAge,setMinAge]=useState('');
     let[maxAge,setMaxAge]=useState('');
+
+
 
     
     return(
