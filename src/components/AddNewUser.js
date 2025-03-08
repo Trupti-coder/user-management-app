@@ -38,13 +38,13 @@ function AddNewUser(onAddUser){
          
 
             FirstName:<input type="text"
-            value={firstname}
+            value={firstName}
             placeholder="Enter FirstName"
             onChange={(event)=>setFirstName(event.target.value)}
             />
 
             LastName:<input type="text"
-            value={lastname}
+            value={lastName}
             placeholder="Enter LastName"
             onChange={(event)=>setLastName(event.target.value)}
             />
