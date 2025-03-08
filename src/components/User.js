@@ -130,6 +130,10 @@ function User(){
                 </select>
             </lable>
             <br></br> <br></br>
+
+            Minimum Age:<input type="number" value={minAge} ></input>
+            Maximum Age:<input type="number" value={maxAge}></input>
+            <br></br><br></br>
        
          search By Id:<input type="text" value={searchId} onChange={funSearch}></input>  
 
