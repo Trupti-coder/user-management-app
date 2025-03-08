@@ -95,6 +95,7 @@ function User(){
 
     function handleNewUser(newUser){
         setUser([...user,newUser]);
+        console.log(user);
 
     }
 
