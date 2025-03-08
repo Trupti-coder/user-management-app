@@ -106,7 +106,15 @@ function User(){
             if(a.firstName<b.firstName){
                 return -1;
             }
-        })
+             if(a.firstName>b.firstName){
+                return 1;
+             }
+
+             return 0;
+             
+        });
+
+        setUser(sortedUsers);
 
     }
 
@@ -165,7 +173,7 @@ function User(){
         <table border='2'>
             <tr>
                 <th>Id</th>
-                <th>FirstName</th>
+                <th onClick={funSortName}>FirstName</th>
                 <th>LastName</th>
                 <th onClick={funSort}>Age</th>
                 <th>Gender</th>
@@ -178,7 +186,7 @@ function User(){
                     return(
                         <tr key={x.id} onClick={()=>{funRowClick(x)}}>
                             <td>{x.id}</td>
-                            <td onClick={()=>{funSortName(x)}}>{x.firstName}</td>
+                            <td>{x.firstName}</td>
                             <td>{x.lastName}</td>
                             <td>{x.age}</td>
                             <td>{x.gender}</td>
