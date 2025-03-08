@@ -1,7 +1,7 @@
 function AddNewUser(){
     return(
         <>
-        <form>
+        <form onSubmit={funSubmit}>
             Id:<input type="text"
             value={id}
             placeholder="Enter Id"
@@ -31,6 +31,7 @@ function AddNewUser(){
             value={bloodgroup}
             placeholder="Enter BloodGroup"
             />
+            <button type="submit">Add User</button>
         </form>
 
         </>
