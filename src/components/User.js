@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import MyModel from "./MyModel";
 import AddNewUser from "./AddNewUser";
-import { Link } from "react-router-dom";
+
 
 function User(){
 
