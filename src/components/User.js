@@ -172,6 +172,7 @@ function User(){
                 <th>Gender</th>
                 <th>BloodGroup</th>
                 <th>Currency</th>
+                <th>Email</th>
                 
             </tr>
             {
@@ -185,6 +186,7 @@ function User(){
                             <td>{x.gender}</td>
                             <td>{x.bloodGroup}</td>
                             <td>{x.bank.currency}</td>
+                            <td>{x.email}</td>
                         </tr>
                     )
                 })
