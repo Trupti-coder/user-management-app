@@ -44,6 +44,7 @@ function User(){
     let[gender,setGender]=useState('');
     let[searchId,setSearchId]=useState('');
     let[bloodgroup,setBloodGroup]=useState('');
+    let[email,setEmail]=useState('');
       //filter by age
 
       let[minAge,setMinAge]=useState('');
