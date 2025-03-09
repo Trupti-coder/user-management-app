@@ -131,7 +131,10 @@ function User(){
     }
 
     function countByGender(users){
-        
+        return users.reduce((counts,user)=>{
+            counts[user.gender]=(counts[user.gender]||0)+1;
+            return counts;
+        },{});
     }
 
     
