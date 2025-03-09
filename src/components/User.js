@@ -137,6 +137,8 @@ function User(){
         },{});
     }
 
+    const genderCounts=countByGender(user);
+
     
 
     return(
@@ -208,7 +210,7 @@ function User(){
 
         <h3>Count By Gender</h3>
         <ul>
-            {Object.entries(genderCount).map(([gender,count])=>(
+            {Object.entries(genderCounts).map(([gender,count])=>(
                 <li key={gender}>{gender}:{count}</li>
             ))}
         </ul>
