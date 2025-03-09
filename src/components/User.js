@@ -199,6 +199,13 @@ function User(){
             <AddNewUser onAddUser={handleNewUser} />
         }
 
+        <h3>Count By Gender</h3>
+        <ul>
+            {Object.entries(genderCount).map(([gender,count])=>(
+                <li key={gender}>{gender}:{count}</li>
+            ))}
+        </ul>
+
         <h3>Pagination</h3>
         <ul onClick={funClick}>
             <li><a href="#">1</a></li>
