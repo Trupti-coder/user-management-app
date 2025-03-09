@@ -130,6 +130,10 @@ function User(){
 
     }
 
+    function countByGender(users){
+        
+    }
+
     
 
     return(
